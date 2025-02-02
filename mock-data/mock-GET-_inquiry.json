@@ -1,0 +1,626 @@
+{
+  "current_page": 1,
+  "data": [
+    {
+      "uuid": "2e903b9d-e24b-41d9-a6f3-9389f4eb8648",
+      "id": 112865,
+      "status": "booked",
+      "createdAt": "2024-12-16T12:48:30.000Z",
+      "garage": {
+        "uuid": "d377cc71-92dd-4569-9b90-6cd19c874446",
+        "name": "MAHAG - Volkswagen Zentrum München für PKW",
+        "timeZone": "Europe/Berlin",
+        "legalName": null,
+        "email": "werkstattmeister@repareo.de",
+        "website": "https://www.mahag-volkswagen.de/de.html",
+        "phone": "08948001906",
+        "street": "Schleibingerstraße 12-16",
+        "postcode": "81669",
+        "city": "München",
+        "state": "Bayern",
+        "country": "Deutschland",
+        "image": null
+      },
+      "service": {
+        "uuid": "545ada5e-2bdd-4cad-bb30-15940fce9845",
+        "name": "Inspektion"
+      },
+      "partner": {
+        "uuid": "55167cd1-1141-4816-99cd-54d0241da1ea",
+        "name": "DB Connect",
+        "slug": "dbconnect",
+        "logo": null
+      },
+      "partsDelivery": {
+        "partsWillBeDelivered": true,
+        "partsWillBeProvided": false,
+        "evtn": null,
+        "additionalParts": null,
+        "tracking": null,
+        "estimatedDeliveryDate": null
+      },
+      "customer": {
+        "email": "esmir.music@db-eco.com",
+        "salutation": "Mr.",
+        "firstName": "Esmir",
+        "lastName": "Music",
+        "phone": "+4915233323173",
+        "street": null,
+        "postcode": null,
+        "city": null,
+        "addition": null
+      },
+      "payment": null,
+      "appointmentAt": "2025-02-03T08:00:00.000Z",
+      "vehicle": {
+        "numberPlate": "F-R 9477",
+        "fullName": "VOLKSWAGEN, T-Roc, 2.0 TDI SCR DSG STYLE 5 Türen Sports Utility Vehicle",
+        "vin": "WVGZZZA1ZRV039232",
+        "mileage": 3381,
+        "description": "VOLKSWAGEN, T-Roc, 2.0 TDI SCR DSG STYLE 5 Türen Sports Utility Vehicle",
+        "initialRegistrationDate": "0024-01-31T23:06:32.000Z",
+        "hsnTsn": null
+      },
+      "customerMessage": "",
+      "premiumServices": [],
+      "cancelData": null,
+      "garagesNote": null,
+      "bookingPinVerifiedAt": null,
+      "shipping": null
+    },
+    {
+      "uuid": "d4da82f6-7636-4f5e-b9dc-eadb9e062d43",
+      "id": 115472,
+      "status": "booked",
+      "createdAt": "2025-01-09T14:11:16.000Z",
+      "garage": {
+        "uuid": "b5b28b88-debb-43ea-802c-7bba5540dee7",
+        "name": "Autohaus Woltmann GmbH &Co. KG",
+        "timeZone": "Europe/Berlin",
+        "legalName": null,
+        "email": "leaseplan_oem_autoservice@repareo.de",
+        "website": null,
+        "phone": "042149904790",
+        "street": "Föhrenstraße 70 - 72",
+        "postcode": "28207",
+        "city": "Bremen",
+        "state": "Bremen",
+        "country": "Deutschland",
+        "image": null
+      },
+      "service": {
+        "uuid": "642682ae-e964-4224-b941-80e380ecfce6",
+        "name": "Termin"
+      },
+      "partner": {
+        "uuid": "780ea16b-f9fa-4971-8dbc-384cc2c601bc",
+        "name": "LeasePlan",
+        "slug": "leaseplan",
+        "logo": null
+      },
+      "partsDelivery": {
+        "partsWillBeDelivered": true,
+        "partsWillBeProvided": false,
+        "evtn": null,
+        "additionalParts": null,
+        "tracking": null,
+        "estimatedDeliveryDate": null
+      },
+      "customer": {
+        "email": "sonja.puettjer@wf-ib.de",
+        "salutation": "Mrs.",
+        "firstName": "Sonja",
+        "lastName": "Püttjer",
+        "phone": "+491747419605",
+        "street": null,
+        "postcode": null,
+        "city": null,
+        "addition": null
+      },
+      "payment": null,
+      "appointmentAt": "2025-02-06T07:00:00.000Z",
+      "vehicle": {
+        "numberPlate": "F-WF 41",
+        "fullName": "FORD RANGER (TKE) 2.0 EcoBlue 4x4",
+        "vin": "6FPPXXMJ2PNB65568",
+        "mileage": 20000,
+        "description": null,
+        "initialRegistrationDate": "2023-03-28T22:00:00.000Z",
+        "hsnTsn": "1566AAL"
+      },
+      "customerMessage": "Fahrzeug meldet Ölwechsel und Inspektion.\nUVV Untersuchung ist fällig - bitte mit durchführen.\nFahrer Herr Brandt",
+      "premiumServices": [
+        {
+          "uuid": "9016371a-c813-4e37-bc17-cd6a141ac194",
+          "name": "Inspektion"
+        },
+        {
+          "uuid": "d7fa70d3-e2cb-4ac9-957f-004c7238612b",
+          "name": "Sonstiges"
+        },
+        {
+          "uuid": "b82e0b0b-7284-4501-a025-bf196e05b27e",
+          "name": "Öl"
+        }
+      ],
+      "cancelData": null,
+      "garagesNote": null,
+      "bookingPinVerifiedAt": null,
+      "shipping": null
+    },
+    {
+      "uuid": "b4c96edc-bd5a-4ade-b3c6-750cf7badf18",
+      "id": 116863,
+      "status": "booked",
+      "createdAt": "2025-01-18T12:21:00.000Z",
+      "garage": {
+        "uuid": "6d0401da-ef85-4f50-9e5c-2b586109342e",
+        "name": "Audi Autohaus Adelbert Moll GmbH + Co.KG KR",
+        "timeZone": "Europe/Berlin",
+        "legalName": null,
+        "email": "db-connect@repareo.de",
+        "website": null,
+        "phone": "02131/9600831",
+        "street": "Krefelder Straße 117",
+        "postcode": "40549",
+        "city": "Düsseldorf",
+        "state": "Nordrhein-Westfalen",
+        "country": "Deutschland",
+        "image": null
+      },
+      "service": {
+        "uuid": "9e93e377-ae31-407d-9948-2c7e6811780d",
+        "name": "Termin E-Auto"
+      },
+      "partner": {
+        "uuid": "780ea16b-f9fa-4971-8dbc-384cc2c601bc",
+        "name": "LeasePlan",
+        "slug": "leaseplan",
+        "logo": null
+      },
+      "partsDelivery": {
+        "partsWillBeDelivered": true,
+        "partsWillBeProvided": false,
+        "evtn": null,
+        "additionalParts": null,
+        "tracking": null,
+        "estimatedDeliveryDate": null
+      },
+      "customer": {
+        "email": "meikefroehlich.mf@googlemail.com",
+        "salutation": "Mr.",
+        "firstName": "Meike",
+        "lastName": "Fröhlich",
+        "phone": "+491777968515",
+        "street": null,
+        "postcode": null,
+        "city": null,
+        "addition": null
+      },
+      "payment": null,
+      "appointmentAt": "2025-02-06T08:30:00.000Z",
+      "vehicle": {
+        "numberPlate": "D-IK 660E",
+        "fullName": null,
+        "vin": "WAUZZZFY7L2105929",
+        "mileage": 58670,
+        "description": null,
+        "initialRegistrationDate": "2020-09-29T22:00:00.000Z",
+        "hsnTsn": "0588BRE"
+      },
+      "customerMessage": "UVV Prüfung",
+      "premiumServices": [
+        {
+          "uuid": "d5a55d01-f57d-46dc-bbde-addfa3874d48",
+          "name": "Sonstiges"
+        }
+      ],
+      "cancelData": null,
+      "garagesNote": null,
+      "bookingPinVerifiedAt": null,
+      "shipping": null
+    },
+    {
+      "uuid": "55a12fa4-ee04-4f53-9196-47fa111820f2",
+      "id": 111981,
+      "status": "booked",
+      "createdAt": "2024-12-10T08:39:51.000Z",
+      "garage": {
+        "uuid": "d377cc71-92dd-4569-9b90-6cd19c874446",
+        "name": "MAHAG - Volkswagen Zentrum München für PKW",
+        "timeZone": "Europe/Berlin",
+        "legalName": null,
+        "email": "werkstattmeister@repareo.de",
+        "website": "https://www.mahag-volkswagen.de/de.html",
+        "phone": "08948001906",
+        "street": "Schleibingerstraße 12-16",
+        "postcode": "81669",
+        "city": "München",
+        "state": "Bayern",
+        "country": "Deutschland",
+        "image": null
+      },
+      "service": {
+        "uuid": "545ada5e-2bdd-4cad-bb30-15940fce9845",
+        "name": "Inspektion"
+      },
+      "partner": {
+        "uuid": "94d3a139-f7bc-43bb-b48e-c8d88272ac64",
+        "name": "FINN",
+        "slug": "finn",
+        "logo": null
+      },
+      "partsDelivery": {
+        "partsWillBeDelivered": true,
+        "partsWillBeProvided": false,
+        "evtn": null,
+        "additionalParts": null,
+        "tracking": null,
+        "estimatedDeliveryDate": null
+      },
+      "customer": {
+        "email": "s.zombo@elexx.de",
+        "salutation": "Mr.",
+        "firstName": "Samuel",
+        "lastName": "Zombo",
+        "phone": "+4915152623391",
+        "street": null,
+        "postcode": null,
+        "city": null,
+        "addition": null
+      },
+      "payment": null,
+      "appointmentAt": "2025-02-10T06:00:00.000Z",
+      "vehicle": {
+        "numberPlate": "EU-FN 9433",
+        "fullName": "VOLKSWAGEN (VW) GOLF 8 Variant (CG5) 1.5 eTSI",
+        "vin": "WVWZZZCD7RW802863",
+        "mileage": 53000,
+        "description": "VW Golf Variant petrol",
+        "initialRegistrationDate": "2023-12-18T23:00:00.000Z",
+        "hsnTsn": "0603COK"
+      },
+      "customerMessage": "",
+      "premiumServices": [
+        {
+          "uuid": "c85d360a-debc-4980-8a3d-102449eee81d",
+          "name": "Inspektion"
+        },
+        {
+          "uuid": "586263e5-9543-41dd-8202-4faf91d3e287",
+          "name": "Öl"
+        },
+        {
+          "uuid": "c50ccf4d-2996-48d3-a7bd-e5175ceddf61",
+          "name": "Bremse"
+        },
+        {
+          "uuid": "7ac6c5a3-496b-47fc-a803-bdfc4c798635",
+          "name": "Ersatzwagen"
+        }
+      ],
+      "cancelData": null,
+      "garagesNote": null,
+      "bookingPinVerifiedAt": null,
+      "shipping": null
+    },
+    {
+      "uuid": "2c8ca3be-a774-41f9-bdea-a48f1c89db9b",
+      "id": 116404,
+      "status": "booked",
+      "createdAt": "2025-01-15T11:06:44.000Z",
+      "garage": {
+        "uuid": "d377cc71-92dd-4569-9b90-6cd19c874446",
+        "name": "MAHAG - Volkswagen Zentrum München für PKW",
+        "timeZone": "Europe/Berlin",
+        "legalName": null,
+        "email": "werkstattmeister@repareo.de",
+        "website": "https://www.mahag-volkswagen.de/de.html",
+        "phone": "08948001906",
+        "street": "Schleibingerstraße 12-16",
+        "postcode": "81669",
+        "city": "München",
+        "state": "Bayern",
+        "country": "Deutschland",
+        "image": null
+      },
+      "service": {
+        "uuid": "545ada5e-2bdd-4cad-bb30-15940fce9845",
+        "name": "Inspektion"
+      },
+      "partner": {
+        "uuid": "55167cd1-1141-4816-99cd-54d0241da1ea",
+        "name": "DB Connect",
+        "slug": "dbconnect",
+        "logo": null
+      },
+      "partsDelivery": {
+        "partsWillBeDelivered": true,
+        "partsWillBeProvided": false,
+        "evtn": null,
+        "additionalParts": null,
+        "tracking": null,
+        "estimatedDeliveryDate": null
+      },
+      "customer": {
+        "email": "uwe.ketzer@deutschebahn.com",
+        "salutation": "Mr.",
+        "firstName": "Uwe",
+        "lastName": "Ketzer",
+        "phone": "+4915237442734",
+        "street": null,
+        "postcode": null,
+        "city": null,
+        "addition": null
+      },
+      "payment": null,
+      "appointmentAt": "2025-02-12T06:00:00.000Z",
+      "vehicle": {
+        "numberPlate": "F-UK 482E",
+        "fullName": "VOLKSWAGEN, ID.7, BEV 82KWH 210 KW PRO AUTO 5 Türen Schräghecklimousine",
+        "vin": "WVWZZZED3RE507195",
+        "mileage": 25000,
+        "description": "VOLKSWAGEN, ID.7, BEV 82KWH 210 KW PRO AUTO 5 Türen Schräghecklimousine",
+        "initialRegistrationDate": "0024-04-22T23:06:32.000Z",
+        "hsnTsn": null
+      },
+      "customerMessage": "VW ID 7. \nImmer wieder kehrende Meldung: Die 12-Volt-Fahrzeugbatterie verfügt über zu wenig Energie...\nTür hinten rechts schließt teilweise schwergängig\nMassagefunktion Fahrersitzung funktioniert nicht richtig (schaltet sich nach 1 Minute ab)",
+      "premiumServices": [
+        {
+          "uuid": "d72824ef-5ee5-4a28-a886-4c4fe8b0b40f",
+          "name": "Ersatzwagen nach Verfügbarkeit"
+        }
+      ],
+      "cancelData": null,
+      "garagesNote": null,
+      "bookingPinVerifiedAt": null,
+      "shipping": null
+    },
+    {
+      "uuid": "d559fa02-deba-4802-9534-631299ce5472",
+      "id": 116371,
+      "status": "booked",
+      "createdAt": "2025-01-15T08:59:18.000Z",
+      "garage": {
+        "uuid": "d377cc71-92dd-4569-9b90-6cd19c874446",
+        "name": "MAHAG - Volkswagen Zentrum München für PKW",
+        "timeZone": "Europe/Berlin",
+        "legalName": null,
+        "email": "werkstattmeister@repareo.de",
+        "website": "https://www.mahag-volkswagen.de/de.html",
+        "phone": "08948001906",
+        "street": "Schleibingerstraße 12-16",
+        "postcode": "81669",
+        "city": "München",
+        "state": "Bayern",
+        "country": "Deutschland",
+        "image": null
+      },
+      "service": {
+        "uuid": "545ada5e-2bdd-4cad-bb30-15940fce9845",
+        "name": "Inspektion"
+      },
+      "partner": {
+        "uuid": "55167cd1-1141-4816-99cd-54d0241da1ea",
+        "name": "DB Connect",
+        "slug": "dbconnect",
+        "logo": null
+      },
+      "partsDelivery": {
+        "partsWillBeDelivered": true,
+        "partsWillBeProvided": false,
+        "evtn": null,
+        "additionalParts": null,
+        "tracking": null,
+        "estimatedDeliveryDate": null
+      },
+      "customer": {
+        "email": "anna.a.haller@deutschebahn.com",
+        "salutation": "Mr.",
+        "firstName": "Anna",
+        "lastName": "Haller",
+        "phone": "+4915233143592",
+        "street": null,
+        "postcode": null,
+        "city": null,
+        "addition": null
+      },
+      "payment": null,
+      "appointmentAt": "2025-02-12T07:20:00.000Z",
+      "vehicle": {
+        "numberPlate": "F-TR 194E",
+        "fullName": "VOLKSWAGEN, ID.3, BEV 82KWH 150KW PRO S AUTO 5-SEATER 5 Türen Schräghecklimousine",
+        "vin": "WVWZZZE1ZPP026625",
+        "mileage": 47358,
+        "description": "VOLKSWAGEN, ID.3, BEV 82KWH 150KW PRO S AUTO 5-SEATER 5 Türen Schräghecklimousine",
+        "initialRegistrationDate": "0023-01-23T23:06:32.000Z",
+        "hsnTsn": null
+      },
+      "customerMessage": "",
+      "premiumServices": [],
+      "cancelData": null,
+      "garagesNote": null,
+      "bookingPinVerifiedAt": null,
+      "shipping": null
+    },
+    {
+      "uuid": "3a28a4df-5982-43b5-8375-2aa556dd68a0",
+      "id": 116978,
+      "status": "booked",
+      "createdAt": "2025-01-20T08:08:50.000Z",
+      "garage": {
+        "uuid": "9df15b45-0b0e-4b3e-ae56-0757dce11ed4",
+        "name": "MAHAG - Volkswagen Zentrum München für NUTZFAHRZEUGE",
+        "timeZone": "Europe/Berlin",
+        "legalName": null,
+        "email": null,
+        "website": "https://www.mahag-volkswagen.de/de.html",
+        "phone": "08948001906",
+        "street": "Schleibingerstr. 12-16",
+        "postcode": "81669",
+        "city": "München",
+        "state": null,
+        "country": null,
+        "image": null
+      },
+      "service": {
+        "uuid": "642682ae-e964-4224-b941-80e380ecfce6",
+        "name": "Termin"
+      },
+      "partner": {
+        "uuid": "780ea16b-f9fa-4971-8dbc-384cc2c601bc",
+        "name": "LeasePlan",
+        "slug": "leaseplan",
+        "logo": null
+      },
+      "partsDelivery": {
+        "partsWillBeDelivered": true,
+        "partsWillBeProvided": false,
+        "evtn": null,
+        "additionalParts": null,
+        "tracking": null,
+        "estimatedDeliveryDate": null
+      },
+      "customer": {
+        "email": "attishaanthony@gmail.com",
+        "salutation": "Mr.",
+        "firstName": "Anthony",
+        "lastName": "Attisha",
+        "phone": "+4915731210263",
+        "street": null,
+        "postcode": null,
+        "city": null,
+        "addition": null
+      },
+      "payment": null,
+      "appointmentAt": "2025-02-18T06:00:00.000Z",
+      "vehicle": {
+        "numberPlate": "M-CR 1567",
+        "fullName": "VOLKSWAGEN (VW) PASSAT B8 Variant (3G5, CB5) 2.0 TDI",
+        "vin": "WVWZZZ3CZNE051316",
+        "mileage": 116306,
+        "description": null,
+        "initialRegistrationDate": "2022-04-03T22:00:00.000Z",
+        "hsnTsn": "0603BQS"
+      },
+      "customerMessage": "Öl und inspektion.",
+      "premiumServices": [
+        {
+          "uuid": "9016371a-c813-4e37-bc17-cd6a141ac194",
+          "name": "Inspektion"
+        },
+        {
+          "uuid": "b82e0b0b-7284-4501-a025-bf196e05b27e",
+          "name": "Öl"
+        }
+      ],
+      "cancelData": null,
+      "garagesNote": null,
+      "bookingPinVerifiedAt": null,
+      "shipping": null
+    },
+    {
+      "uuid": "fe54e2e6-768c-4481-b9ce-ce27352ab91d",
+      "id": 114205,
+      "status": "booked",
+      "createdAt": "2025-01-02T09:43:50.000Z",
+      "garage": {
+        "uuid": "d377cc71-92dd-4569-9b90-6cd19c874446",
+        "name": "MAHAG - Volkswagen Zentrum München für PKW",
+        "timeZone": "Europe/Berlin",
+        "legalName": null,
+        "email": "werkstattmeister@repareo.de",
+        "website": "https://www.mahag-volkswagen.de/de.html",
+        "phone": "08948001906",
+        "street": "Schleibingerstraße 12-16",
+        "postcode": "81669",
+        "city": "München",
+        "state": "Bayern",
+        "country": "Deutschland",
+        "image": null
+      },
+      "service": {
+        "uuid": "545ada5e-2bdd-4cad-bb30-15940fce9845",
+        "name": "Inspektion"
+      },
+      "partner": {
+        "uuid": "94d3a139-f7bc-43bb-b48e-c8d88272ac64",
+        "name": "FINN",
+        "slug": "finn",
+        "logo": null
+      },
+      "partsDelivery": {
+        "partsWillBeDelivered": true,
+        "partsWillBeProvided": false,
+        "evtn": null,
+        "additionalParts": null,
+        "tracking": null,
+        "estimatedDeliveryDate": null
+      },
+      "customer": {
+        "email": "u.luetzenkirchen@arcor.de",
+        "salutation": "Mr.",
+        "firstName": "Uwe",
+        "lastName": "Lützenkirchen",
+        "phone": "+4915739265021",
+        "street": null,
+        "postcode": null,
+        "city": null,
+        "addition": null
+      },
+      "payment": null,
+      "appointmentAt": "2025-03-07T07:00:00.000Z",
+      "vehicle": {
+        "numberPlate": "EU-FN 1653",
+        "fullName": "VOLKSWAGEN (VW) GOLF 8 Variant (CG5) 1.5 eTSI",
+        "vin": "WVWZZZCD7PW525449",
+        "mileage": 24000,
+        "description": "VW Golf Variant hybrid_petrol",
+        "initialRegistrationDate": "2023-03-07T23:00:00.000Z",
+        "hsnTsn": "0603COK"
+      },
+      "customerMessage": "",
+      "premiumServices": [
+        {
+          "uuid": "c85d360a-debc-4980-8a3d-102449eee81d",
+          "name": "Inspektion"
+        },
+        {
+          "uuid": "b8db27c6-f47f-41f7-8055-402f499a701a",
+          "name": "HU/AU \"TÜV\""
+        }
+      ],
+      "cancelData": null,
+      "garagesNote": null,
+      "bookingPinVerifiedAt": null,
+      "shipping": null
+    }
+  ],
+  "first_page_url": "https://staging.werkstatt.repareo.de/rest/repareo/dashboard/v1/inquiry?page=1",
+  "from": 1,
+  "last_page": 1,
+  "last_page_url": "https://staging.werkstatt.repareo.de/rest/repareo/dashboard/v1/inquiry?page=1",
+  "links": [
+    {
+      "url": null,
+      "label": "&laquo; Previous",
+      "active": false
+    },
+    {
+      "url": "https://staging.werkstatt.repareo.de/rest/repareo/dashboard/v1/inquiry?page=1",
+      "label": "1",
+      "active": true
+    },
+    {
+      "url": null,
+      "label": "Next &raquo;",
+      "active": false
+    }
+  ],
+  "next_page_url": null,
+  "path": "https://staging.werkstatt.repareo.de/rest/repareo/dashboard/v1/inquiry",
+  "per_page": 15,
+  "prev_page_url": null,
+  "to": 8,
+  "total": 8
+}

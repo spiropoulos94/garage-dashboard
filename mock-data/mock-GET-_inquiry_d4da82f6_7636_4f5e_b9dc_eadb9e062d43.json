@@ -1,0 +1,80 @@
+{
+  "uuid": "d4da82f6-7636-4f5e-b9dc-eadb9e062d43",
+  "id": 115472,
+  "status": "booked",
+  "createdAt": "2025-01-09T14:11:16.000Z",
+  "garage": {
+    "uuid": "b5b28b88-debb-43ea-802c-7bba5540dee7",
+    "name": "Autohaus Woltmann GmbH &Co. KG",
+    "timeZone": "Europe/Berlin",
+    "legalName": null,
+    "email": "leaseplan_oem_autoservice@repareo.de",
+    "website": null,
+    "phone": "042149904790",
+    "street": "Föhrenstraße 70 - 72",
+    "postcode": "28207",
+    "city": "Bremen",
+    "state": "Bremen",
+    "country": "Deutschland",
+    "image": null
+  },
+  "service": {
+    "uuid": "642682ae-e964-4224-b941-80e380ecfce6",
+    "name": "Termin"
+  },
+  "partner": {
+    "uuid": "780ea16b-f9fa-4971-8dbc-384cc2c601bc",
+    "name": "LeasePlan",
+    "slug": "leaseplan",
+    "logo": null
+  },
+  "partsDelivery": {
+    "partsWillBeDelivered": true,
+    "partsWillBeProvided": false,
+    "evtn": null,
+    "additionalParts": null,
+    "tracking": null,
+    "estimatedDeliveryDate": null
+  },
+  "customer": {
+    "email": "sonja.puettjer@wf-ib.de",
+    "salutation": "Mrs.",
+    "firstName": "Sonja",
+    "lastName": "Püttjer",
+    "phone": "+491747419605",
+    "street": null,
+    "postcode": null,
+    "city": null,
+    "addition": null
+  },
+  "payment": null,
+  "appointmentAt": "2025-02-06T07:00:00.000Z",
+  "vehicle": {
+    "numberPlate": "F-WF 41",
+    "fullName": "FORD RANGER (TKE) 2.0 EcoBlue 4x4",
+    "vin": "6FPPXXMJ2PNB65568",
+    "mileage": 20000,
+    "description": null,
+    "initialRegistrationDate": "2023-03-28T22:00:00.000Z",
+    "hsnTsn": "1566AAL"
+  },
+  "customerMessage": "Fahrzeug meldet Ölwechsel und Inspektion.\nUVV Untersuchung ist fällig - bitte mit durchführen.\nFahrer Herr Brandt",
+  "premiumServices": [
+    {
+      "uuid": "9016371a-c813-4e37-bc17-cd6a141ac194",
+      "name": "Inspektion"
+    },
+    {
+      "uuid": "d7fa70d3-e2cb-4ac9-957f-004c7238612b",
+      "name": "Sonstiges"
+    },
+    {
+      "uuid": "b82e0b0b-7284-4501-a025-bf196e05b27e",
+      "name": "Öl"
+    }
+  ],
+  "cancelData": null,
+  "garagesNote": null,
+  "bookingPinVerifiedAt": null,
+  "shipping": null
+}

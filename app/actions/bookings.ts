@@ -9,6 +9,7 @@ export const getBookings = async (params?: Record<string, string | number | stri
 };
 
 export const getBooking = async (id: string) => {
+  id = "d4da82f6-7636-4f5e-b9dc-eadb9e062d43"; // use mock data
   return makeRequest<Booking>(`/inquiry/${id}`);
 };
 

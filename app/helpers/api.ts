@@ -1,4 +1,6 @@
 import { fetchWithUserId } from "@/app/actions/token";
+import fs from "fs";
+import path from "path";
 
 const REPAREO_DASHBOARD_API = process.env.REPAREO_DASHBOARD_API;
 
@@ -7,8 +9,30 @@ export interface ErrorResponse {
   message: string;
 }
 
-// makeRequest is a generic function that makes a request to the REPAREO_DASHBOARD_API
-// and T is the type of the response data
+// Function to generate a safe filename
+const generateMockFilePath = (method: string, endpoint: string) => {
+  const sanitizedEndpoint = endpoint.replace(/[^a-zA-Z0-9]/g, "_"); // Replace special chars
+  const folderPath = path.join(process.cwd(), "mock-data");
+  if (!fs.existsSync(folderPath)) {
+    fs.mkdirSync(folderPath, { recursive: true }); // Ensure the folder exists
+  }
+  return path.join(folderPath, `mock-${method}-${sanitizedEndpoint}.json`);
+};
+
+// Function to check if mock data exists
+const getMockData = (filePath: string) => {
+  if (fs.existsSync(filePath)) {
+    return JSON.parse(fs.readFileSync(filePath, "utf-8"));
+  }
+  return null;
+};
+
+// Function to save API response to a file
+const saveMockData = (filePath: string, data: any) => {
+  fs.writeFileSync(filePath, JSON.stringify(data, null, 2), "utf-8");
+};
+
+// Updated makeRequest function
 export const makeRequest = async <T>(
   endpoint: string,
   options: {
@@ -21,12 +45,6 @@ export const makeRequest = async <T>(
   const { method = "GET", params, headers = { Accept: "application/json" }, body } = options;
 
   const baseUrl = REPAREO_DASHBOARD_API + endpoint;
-  // const queryParams = params
-  //   ? new URLSearchParams(
-  //       Object.entries(params).map(([key, value]) => [key, String(value)]),
-  //     ).toString()
-  //   : "";
-
   const queryParams = params
     ? new URLSearchParams(
         Object.entries(params).flatMap(([key, value]) =>
@@ -36,25 +54,34 @@ export const makeRequest = async <T>(
         ),
       ).toString()
     : "";
-
   const fetchUrl = queryParams ? `${baseUrl}?${queryParams}` : baseUrl;
+
+  // Generate mock file path
+  const mockFilePath = generateMockFilePath(method, endpoint);
+
+  // Check if mock data exists
+  const mockData = getMockData(mockFilePath);
+  if (mockData) {
+    console.log(`Returning mock data for ${method} ${endpoint}`);
+    return mockData;
+  }
 
   try {
     const res = await fetchWithUserId(fetchUrl, {
       method,
       headers: {
         ...headers,
-        "Content-Type": "application/json", // Ensure content type is set
+        "Content-Type": "application/json",
       },
       body: body ? JSON.stringify(body) : undefined,
     });
 
     if (res.ok) {
-      // If the response is a 204 No Content response, return a simple object with ok: true
-      if (res.status === 204) {
-        return { ok: true } as unknown as T;
-      }
-      const data = await res.json();
+      const data = res.status === 204 ? { ok: true } : await res.json();
+
+      // Save response to mock file
+      saveMockData(mockFilePath, data);
+
       return data;
     } else {
       return {
