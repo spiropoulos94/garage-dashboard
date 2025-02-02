@@ -1,5 +1,7 @@
 Source Code of Garage Dashboard Repository
 
+Login with email ```email``` and password as ```password``` to see the project live.
+
 ## App Router folder naming convention
 
 We are using the
