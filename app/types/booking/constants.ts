@@ -1,0 +1,32 @@
+export const BookingStatuses = {
+  Pending: "pending",
+  AwaitingVerification: "awaiting verification",
+  InModeration: "in moderation",
+  Approved: "approved",
+  Declined: "declined",
+  Accepted: "accepted",
+  Rejected: "rejected",
+  PriceNegotiationByGarage: "price negotiation by garage",
+  AcceptedByUser: "accepted by user",
+  RejectedByUser: "rejected by user",
+  AwaitingGarageResponse: "awaiting garage response (>24h)",
+  ClarificationRequired: "clarification required",
+  AppointmentInClarification: "appointment in clarification",
+  ProposedNewAppointmentDate: "proposed new appointment date",
+  AwaitingCustomerResponse: "awaiting customer response (>6h)",
+  Booked: "booked",
+  Billed: "billed",
+  NotBillable: "not billable",
+  Cancelled: "cancelled",
+  LiveBookingError: "live booking error",
+  AwaitingExternalApproval: "awaiting external approval",
+} as const;
+
+export const BookingActions = {
+  Confirm: "confirm",
+  Reschedule: "reschedule",
+  ReportIssue: "reportIssue",
+  Cancel: "cancel",
+  PackageReceived: "packageReceived",
+  CustomerHere: "customerHere",
+} as const;

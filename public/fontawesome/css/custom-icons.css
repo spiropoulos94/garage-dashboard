@@ -1,0 +1,178 @@
+.fak.fa-abarth::before, .fa-kit.fa-abarth::before { content: "\e04f"; }
+.fak.fa-alfa-romeo::before, .fa-kit.fa-alfa-romeo::before { content: "\e050"; }
+.fak.fa-alpina::before, .fa-kit.fa-alpina::before { content: "\e051"; }
+.fak.fa-alpine::before, .fa-kit.fa-alpine::before { content: "\e052"; }
+.fak.fa-angle-down::before, .fa-kit.fa-angle-down::before { content: "\e07c"; }
+.fak.fa-angle-up::before, .fa-kit.fa-angle-up::before { content: "\e07b"; }
+.fak.fa-aston-martin::before, .fa-kit.fa-aston-martin::before { content: "\e002"; }
+.fak.fa-audi::before, .fa-kit.fa-audi::before { content: "\e053"; }
+.fak.fa-badge-check::before, .fa-kit.fa-badge-check::before { content: "\e082"; }
+.fak.fa-bagel::before, .fa-kit.fa-bagel::before { content: "\e081"; }
+.fak.fa-bagel-light::before, .fa-kit.fa-bagel-light::before { content: "\e08d"; }
+.fak.fa-bars::before, .fa-kit.fa-bars::before { content: "\e07f"; }
+.fak.fa-battery-full::before, .fa-kit.fa-battery-full::before { content: "\e0a2"; }
+.fak.fa-bentley::before, .fa-kit.fa-bentley::before { content: "\e054"; }
+.fak.fa-bmw::before, .fa-kit.fa-bmw::before { content: "\e055"; }
+.fak.fa-bolt::before, .fa-kit.fa-bolt::before { content: "\e080"; }
+.fak.fa-bugatti::before, .fa-kit.fa-bugatti::before { content: "\e056"; }
+.fak.fa-buick::before, .fa-kit.fa-buick::before { content: "\e058"; }
+.fak.fa-cadillac::before, .fa-kit.fa-cadillac::before { content: "\e057"; }
+.fak.fa-calendar-arrow-up::before, .fa-kit.fa-calendar-arrow-up::before { content: "\e07e"; }
+.fak.fa-calendar-day::before, .fa-kit.fa-calendar-day::before { content: "\e07d"; }
+.fak.fa-car::before, .fa-kit.fa-car::before { content: "\e083"; }
+.fak.fa-car-burst::before, .fa-kit.fa-car-burst::before { content: "\e085"; }
+.fak.fa-car-wrench::before, .fa-kit.fa-car-wrench::before { content: "\e084"; }
+.fak.fa-car-wrench-light::before, .fa-kit.fa-car-wrench-light::before { content: "\e093"; }
+.fak.fa-certificate::before, .fa-kit.fa-certificate::before { content: "\e089"; }
+.fak.fa-chevrolet::before, .fa-kit.fa-chevrolet::before { content: "\e004"; }
+.fak.fa-chevron-down::before, .fa-kit.fa-chevron-down::before { content: "\e08a"; }
+.fak.fa-chevron-left::before, .fa-kit.fa-chevron-left::before { content: "\e087"; }
+.fak.fa-chevron-right::before, .fa-kit.fa-chevron-right::before { content: "\e088"; }
+.fak.fa-chevron-up::before, .fa-kit.fa-chevron-up::before { content: "\e086"; }
+.fak.fa-chrysler::before, .fa-kit.fa-chrysler::before { content: "\e005"; }
+.fak.fa-circle-check::before, .fa-kit.fa-circle-check::before { content: "\e05f"; }
+.fak.fa-circle-exclamation::before, .fa-kit.fa-circle-exclamation::before { content: "\e060"; }
+.fak.fa-circle-info::before, .fa-kit.fa-circle-info::before { content: "\e065"; }
+.fak.fa-circle-small::before, .fa-kit.fa-circle-small::before { content: "\e061"; }
+.fak.fa-circle-sort::before, .fa-kit.fa-circle-sort::before { content: "\e063"; }
+.fak.fa-citroen::before, .fa-kit.fa-citroen::before { content: "\e059"; }
+.fak.fa-clipboard-list-check::before, .fa-kit.fa-clipboard-list-check::before { content: "\e068"; }
+.fak.fa-clipboard-list-check-light::before, .fa-kit.fa-clipboard-list-check-light::before { content: "\e092"; }
+.fak.fa-clock-rotate-left::before, .fa-kit.fa-clock-rotate-left::before { content: "\e067"; }
+.fak.fa-cupra::before, .fa-kit.fa-cupra::before { content: "\e007"; }
+.fak.fa-dacia::before, .fa-kit.fa-dacia::before { content: "\e008"; }
+.fak.fa-daewoo::before, .fa-kit.fa-daewoo::before { content: "\e009"; }
+.fak.fa-daihatsu::before, .fa-kit.fa-daihatsu::before { content: "\e00a"; }
+.fak.fa-dodge::before, .fa-kit.fa-dodge::before { content: "\e00b"; }
+.fak.fa-ds::before, .fa-kit.fa-ds::before { content: "\e00c"; }
+.fak.fa-engine::before, .fa-kit.fa-engine::before { content: "\e05e"; }
+.fak.fa-engine-light::before, .fa-kit.fa-engine-light::before { content: "\e090"; }
+.fak.fa-engine-warning::before, .fa-kit.fa-engine-warning::before { content: "\e066"; }
+.fak.fa-engine-warning-light::before, .fa-kit.fa-engine-warning-light::before { content: "\e096"; }
+.fak.fa-ferrari::before, .fa-kit.fa-ferrari::before { content: "\e00d"; }
+.fak.fa-fiat::before, .fa-kit.fa-fiat::before { content: "\e05a"; }
+.fak.fa-ford::before, .fa-kit.fa-ford::before { content: "\e010"; }
+.fak.fa-ford-usa::before, .fa-kit.fa-ford-usa::before { content: "\e00f"; }
+.fak.fa-garage::before, .fa-kit.fa-garage::before { content: "\e062"; }
+.fak.fa-garage-car::before, .fa-kit.fa-garage-car::before { content: "\e06a"; }
+.fak.fa-garage-light::before, .fa-kit.fa-garage-light::before { content: "\e097"; }
+.fak.fa-gears::before, .fa-kit.fa-gears::before { content: "\e06d"; }
+.fak.fa-gears-light::before, .fa-kit.fa-gears-light::before { content: "\e08f"; }
+.fak.fa-geely::before, .fa-kit.fa-geely::before { content: "\e011"; }
+.fak.fa-genesis::before, .fa-kit.fa-genesis::before { content: "\e012"; }
+.fak.fa-great-wall::before, .fa-kit.fa-great-wall::before { content: "\e013"; }
+.fak.fa-home::before, .fa-kit.fa-home::before { content: "\e069"; }
+.fak.fa-honda::before, .fa-kit.fa-honda::before { content: "\e000"; }
+.fak.fa-hummer::before, .fa-kit.fa-hummer::before { content: "\e014"; }
+.fak.fa-hyundai::before, .fa-kit.fa-hyundai::before { content: "\e015"; }
+.fak.fa-infiniti::before, .fa-kit.fa-infiniti::before { content: "\e016"; }
+.fak.fa-irmscher::before, .fa-kit.fa-irmscher::before { content: "\e017"; }
+.fak.fa-isuzu::before, .fa-kit.fa-isuzu::before { content: "\e018"; }
+.fak.fa-iveco::before, .fa-kit.fa-iveco::before { content: "\e019"; }
+.fak.fa-jaguar::before, .fa-kit.fa-jaguar::before { content: "\e001"; }
+.fak.fa-jeep::before, .fa-kit.fa-jeep::before { content: "\e01a"; }
+.fak.fa-kia::before, .fa-kit.fa-kia::before { content: "\e05b"; }
+.fak.fa-ktm::before, .fa-kit.fa-ktm::before { content: "\e01c"; }
+.fak.fa-lada::before, .fa-kit.fa-lada::before { content: "\e01d"; }
+.fak.fa-lamborghini::before, .fa-kit.fa-lamborghini::before { content: "\e01e"; }
+.fak.fa-lancia::before, .fa-kit.fa-lancia::before { content: "\e01f"; }
+.fak.fa-land-rover::before, .fa-kit.fa-land-rover::before { content: "\e020"; }
+.fak.fa-landwind::before, .fa-kit.fa-landwind::before { content: "\e021"; }
+.fak.fa-lexus::before, .fa-kit.fa-lexus::before { content: "\e022"; }
+.fak.fa-light-box-circle-check::before, .fa-kit.fa-light-box-circle-check::before { content: "\e09e"; }
+.fak.fa-light-car-magnifying-glass::before, .fa-kit.fa-light-car-magnifying-glass::before { content: "\e09b"; }
+.fak.fa-light-garage-car-circle-question::before, .fa-kit.fa-light-garage-car-circle-question::before { content: "\e003"; }
+.fak.fa-light-receipt-circle-check::before, .fa-kit.fa-light-receipt-circle-check::before { content: "\e09f"; }
+.fak.fa-light-receipt-circle-info::before, .fa-kit.fa-light-receipt-circle-info::before { content: "\e0a0"; }
+.fak.fa-light-receipt-circle-minus::before, .fa-kit.fa-light-receipt-circle-minus::before { content: "\e0a1"; }
+.fak.fa-light-tire-circle-pause::before, .fa-kit.fa-light-tire-circle-pause::before { content: "\e098"; }
+.fak.fa-light-tire-circle-question::before, .fa-kit.fa-light-tire-circle-question::before { content: "\e09c"; }
+.fak.fa-light-tire-rotate::before, .fa-kit.fa-light-tire-rotate::before { content: "\e09a"; }
+.fak.fa-light-tire-sparkle::before, .fa-kit.fa-light-tire-sparkle::before { content: "\e099"; }
+.fak.fa-light-tire-user::before, .fa-kit.fa-light-tire-user::before { content: "\e09d"; }
+.fak.fa-lincoln::before, .fa-kit.fa-lincoln::before { content: "\e023"; }
+.fak.fa-location-check::before, .fa-kit.fa-location-check::before { content: "\e064"; }
+.fak.fa-location-dot::before, .fa-kit.fa-location-dot::before { content: "\e06b"; }
+.fak.fa-lotus::before, .fa-kit.fa-lotus::before { content: "\e024"; }
+.fak.fa-lynk::before, .fa-kit.fa-lynk::before { content: "\e025"; }
+.fak.fa-magnifying-glass::before, .fa-kit.fa-magnifying-glass::before { content: "\e06c"; }
+.fak.fa-man::before, .fa-kit.fa-man::before { content: "\e028"; }
+.fak.fa-maserati::before, .fa-kit.fa-maserati::before { content: "\e026"; }
+.fak.fa-maybach::before, .fa-kit.fa-maybach::before { content: "\e027"; }
+.fak.fa-mazda::before, .fa-kit.fa-mazda::before { content: "\e02a"; }
+.fak.fa-mclaren::before, .fa-kit.fa-mclaren::before { content: "\e029"; }
+.fak.fa-mercedes-benz::before, .fa-kit.fa-mercedes-benz::before { content: "\e02b"; }
+.fak.fa-mg::before, .fa-kit.fa-mg::before { content: "\e02c"; }
+.fak.fa-mini::before, .fa-kit.fa-mini::before { content: "\e02d"; }
+.fak.fa-mitsubishi::before, .fa-kit.fa-mitsubishi::before { content: "\e02e"; }
+.fak.fa-mitsuoka::before, .fa-kit.fa-mitsuoka::before { content: "\e02f"; }
+.fak.fa-nissan::before, .fa-kit.fa-nissan::before { content: "\e030"; }
+.fak.fa-oil-can-drip::before, .fa-kit.fa-oil-can-drip::before { content: "\e071"; }
+.fak.fa-oil-can-drip-light::before, .fa-kit.fa-oil-can-drip-light::before { content: "\e094"; }
+.fak.fa-opel::before, .fa-kit.fa-opel::before { content: "\e031"; }
+.fak.fa-peugeot::before, .fa-kit.fa-peugeot::before { content: "\e032"; }
+.fak.fa-phone::before, .fa-kit.fa-phone::before { content: "\e06f"; }
+.fak.fa-piaggio::before, .fa-kit.fa-piaggio::before { content: "\e033"; }
+.fak.fa-piggy-bank::before, .fa-kit.fa-piggy-bank::before { content: "\e073"; }
+.fak.fa-plymouth::before, .fa-kit.fa-plymouth::before { content: "\e034"; }
+.fak.fa-polestar::before, .fa-kit.fa-polestar::before { content: "\e035"; }
+.fak.fa-pontiac::before, .fa-kit.fa-pontiac::before { content: "\e036"; }
+.fak.fa-porsche::before, .fa-kit.fa-porsche::before { content: "\e037"; }
+.fak.fa-proton::before, .fa-kit.fa-proton::before { content: "\e038"; }
+.fak.fa-ram::before, .fa-kit.fa-ram::before { content: "\e039"; }
+.fak.fa-receipt::before, .fa-kit.fa-receipt::before { content: "\e070"; }
+.fak.fa-renault::before, .fa-kit.fa-renault::before { content: "\e03b"; }
+.fak.fa-renault-trucks::before, .fa-kit.fa-renault-trucks::before { content: "\e03a"; }
+.fak.fa-repareo::before, .fa-kit.fa-repareo::before { content: "\e05c"; }
+.fak.fa-rolls-royce::before, .fa-kit.fa-rolls-royce::before { content: "\e03c"; }
+.fak.fa-rover::before, .fa-kit.fa-rover::before { content: "\e03d"; }
+.fak.fa-saab::before, .fa-kit.fa-saab::before { content: "\e03e"; }
+.fak.fa-screwdriver-wrench::before, .fa-kit.fa-screwdriver-wrench::before { content: "\e08b"; }
+.fak.fa-seat::before, .fa-kit.fa-seat::before { content: "\e03f"; }
+.fak.fa-shuanghuan::before, .fa-kit.fa-shuanghuan::before { content: "\e040"; }
+.fak.fa-skoda::before, .fa-kit.fa-skoda::before { content: "\e041"; }
+.fak.fa-smart::before, .fa-kit.fa-smart::before { content: "\e042"; }
+.fak.fa-spinner::before, .fa-kit.fa-spinner::before { content: "\e074"; }
+.fak.fa-ssangyong::before, .fa-kit.fa-ssangyong::before { content: "\e044"; }
+.fak.fa-star::before, .fa-kit.fa-star::before { content: "\e075"; }
+.fak.fa-steering-wheel::before, .fa-kit.fa-steering-wheel::before { content: "\e072"; }
+.fak.fa-steering-wheel-light::before, .fa-kit.fa-steering-wheel-light::before { content: "\e095"; }
+.fak.fa-streetscooter::before, .fa-kit.fa-streetscooter::before { content: "\e043"; }
+.fak.fa-subaru::before, .fa-kit.fa-subaru::before { content: "\e045"; }
+.fak.fa-suzuki::before, .fa-kit.fa-suzuki::before { content: "\e046"; }
+.fak.fa-tazzari::before, .fa-kit.fa-tazzari::before { content: "\e047"; }
+.fak.fa-temperature-snow::before, .fa-kit.fa-temperature-snow::before { content: "\e06e"; }
+.fak.fa-temperature-snow-light::before, .fa-kit.fa-temperature-snow-light::before { content: "\e08e"; }
+.fak.fa-tesla::before, .fa-kit.fa-tesla::before { content: "\e048"; }
+.fak.fa-thin-engine-circle-bolt::before, .fa-kit.fa-thin-engine-circle-bolt::before { content: "\e05d"; }
+.fak.fa-tire::before, .fa-kit.fa-tire::before { content: "\e077"; }
+.fak.fa-tire-light::before, .fa-kit.fa-tire-light::before { content: "\e091"; }
+.fak.fa-toolbox::before, .fa-kit.fa-toolbox::before { content: "\e078"; }
+.fak.fa-toyota::before, .fa-kit.fa-toyota::before { content: "\e049"; }
+.fak.fa-triangle::before, .fa-kit.fa-triangle::before { content: "\e076"; }
+.fak.fa-trophy-star::before, .fa-kit.fa-trophy-star::before { content: "\e07a"; }
+.fak.fa-uaz::before, .fa-kit.fa-uaz::before { content: "\e04a"; }
+.fak.fa-vauxhall::before, .fa-kit.fa-vauxhall::before { content: "\e04b"; }
+.fak.fa-volkswagen::before, .fa-kit.fa-volkswagen::before { content: "\e04c"; }
+.fak.fa-volvo::before, .fa-kit.fa-volvo::before { content: "\e04d"; }
+.fak.fa-wiesmann::before, .fa-kit.fa-wiesmann::before { content: "\e04e"; }
+.fak.fa-wrench::before, .fa-kit.fa-wrench::before { content: "\e08c"; }
+.fak.fa-xmark::before, .fa-kit.fa-xmark::before { content: "\e079"; }
+
+.fak, .fa-kit {
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  display: var(--fa-display, inline-block);
+  font-style: normal;
+  font-variant: normal;
+  text-rendering: auto;
+  line-height: 1;
+  font-family: "Font Awesome Kit";
+}
+
+@font-face {
+  font-family: "Font Awesome Kit";
+  font-style: normal;
+  font-display: block;
+  src: url("../webfonts/custom-icons.woff2") format("woff2"), url("../webfonts/custom-icons.ttf") format("truetype");
+}
