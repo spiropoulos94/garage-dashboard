@@ -42,7 +42,27 @@ This application can run in a fully mocked mode to facilitate development and te
    - Email: `email`
    - Password: `password`
 
-The application will automatically use mock data for all API requests when running in this mode.
+The application will automatically use mock data for all API requests when in mock mode. The system works as follows:
+
+- When you login with the mock credentials, a special token is set that identifies mock mode
+- All API requests will first check for local mock data files in the `mock-data/` directory
+- If mock data for an endpoint is found, it will be used regardless of backend availability
+- If no mock data is found but you're in mock mode, default empty responses will be returned
+- The system is fully functional without any backend connection
+
+### Creating custom mock data
+
+You can create your own mock data files for specific endpoints:
+
+1. Create JSON files in the `mock-data/` directory following the naming convention:
+
+   ```
+   mock-METHOD-endpoint_path.json
+   ```
+
+   For example: `mock-GET-_user_filters.json`
+
+2. The mock data system will automatically use these files when the corresponding endpoint is called.
 
 ## App Structure
 
@@ -80,6 +100,7 @@ The application includes various views and components:
   ![Detail View](./screenshots/detail-view.png)
 
 - **Modal Flow**:
+
   - Step 1: ![Modal Flow Step 1](./screenshots/modal-flow-step-1.png)
   - Step 2: ![Modal Flow Step 2](./screenshots/modal-flow-step-2.png)
   - Step 3: ![Modal Flow Step 3](./screenshots/modal-flow-step-3.png)

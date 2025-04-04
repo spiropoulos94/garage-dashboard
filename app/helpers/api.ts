@@ -1,4 +1,5 @@
 import { fetchWithUserId } from "@/app/actions/token";
+import { getFromSession } from "@/app/helpers/sessionHelpers";
 import fs from "fs";
 import path from "path";
 
@@ -8,6 +9,13 @@ export interface ErrorResponse {
   error: true;
   message: string;
 }
+
+// Function to check if we're in mock mode
+const isInMockMode = () => {
+  // Check if we're using the mock credentials
+  const token = getFromSession("token");
+  return token === "FAKE_TOKEN";
+};
 
 // Function to generate a safe filename
 const generateMockFilePath = (method: string, endpoint: string) => {
@@ -61,9 +69,19 @@ export const makeRequest = async <T>(
 
   // Check if mock data exists
   const mockData = getMockData(mockFilePath);
-  if (mockData) {
-    console.log(`Returning mock data for ${method} ${endpoint}`);
-    return mockData;
+
+  // If we're in mock mode or mock data exists, return the mock data
+  if (isInMockMode() || mockData) {
+    if (mockData) {
+      console.log(`Returning mock data for ${method} ${endpoint}`);
+      return mockData;
+    } else {
+      console.log(`No mock data found for ${method} ${endpoint} but we're in mock mode`);
+      // Return empty data based on the endpoint pattern
+      // This is a fallback for endpoints that don't have mock data
+      // In a real implementation, you would want to create proper mock data files
+      return {} as T;
+    }
   }
 
   try {
@@ -90,6 +108,11 @@ export const makeRequest = async <T>(
       } as ErrorResponse;
     }
   } catch (error) {
+    console.error(`Error fetching ${endpoint}:`, error);
+    if (isInMockMode()) {
+      // Return empty data in mock mode even if there's an error
+      return {} as T;
+    }
     throw error;
   }
 };

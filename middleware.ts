@@ -8,10 +8,21 @@ const isDev = process.env.NODE_ENV === "development";
 const locales = ["en_US", "de_DE"];
 const defaultLocale = "de_DE";
 
+// Function to check if user is in mock mode
+const isInMockMode = (request: NextRequest) => {
+  const cookies = request.cookies;
+  return cookies.get("token")?.value === "FAKE_TOKEN";
+};
+
 // TODO: Revert if we have no internal endpoints
 const handleAPIRequest = async (request: NextRequest) => {
   // allow access on health check endpoint
   if (request.nextUrl.pathname === "/api/health") {
+    return;
+  }
+
+  // If in mock mode, allow all API requests
+  if (isInMockMode(request)) {
     return;
   }
 
@@ -37,6 +48,7 @@ export async function middleware(request: NextRequest) {
     pathname.includes("reset-password");
 
   const isUserLoggedIn = validateSession();
+  const isMockMode = isInMockMode(request);
 
   // Parse the locale from the pathname
   const localeMatch = pathname.match(/^\/([a-z]{2}_[A-Z]{2})\//);
@@ -59,7 +71,7 @@ export async function middleware(request: NextRequest) {
   }
 
   // if user is not logged in, redirect to login page
-  if (!isUserLoggedIn) {
+  if (!isUserLoggedIn && !isMockMode) {
     // if pathname does not include locale, add it and redirect to the new pathname
     if (isAuthPage && !pathnameHasLocale) {
       return NextResponse.redirect(new URL(`/${locale}${pathname}${search}`, request.url));
@@ -75,7 +87,7 @@ export async function middleware(request: NextRequest) {
   }
 
   // if user is logged in and tries to access login page, redirect to home
-  if (isAuthPage && isUserLoggedIn) {
+  if (isAuthPage && (isUserLoggedIn || isMockMode)) {
     return NextResponse.redirect(new URL(`/${locale}${search}`, request.url));
   }
 
