@@ -1,4 +1,5 @@
 import { cookies } from "next/headers";
+import { isInMockMode, MOCK_TOKEN } from "@/app/services/mockService";
 
 export const ONE_DAY = 24 * 60 * 60 * 1000;
 
@@ -24,19 +25,13 @@ export function getFromSession(key: string): string {
   return cookies().get(key)?.value || "";
 }
 
-// Check if we're in mock mode
-export const isInMockMode = (): boolean => {
-  const token = getTokenFromSession();
-  return token === "FAKE_TOKEN";
-};
-
 // Function to validate session, including mock mode support
 export const validateSession = (): boolean => {
   const userId = cookies().get("userId")?.value;
-  const accessToken = cookies().get("token")?.value;
+  const accessToken = cookies().get("token")?.value || "";
 
-  // Mock mode is considered a valid session
-  if (accessToken === "FAKE_TOKEN") {
+  // Check for mock mode
+  if (isInMockMode(accessToken)) {
     return true;
   }
 

@@ -1,6 +1,8 @@
 "use server";
 
 import { getTokenFromSession, getUserIdFromSession } from "@/app/helpers/sessionHelpers";
+import { isInMockMode, createMockResponse } from "@/app/services/mockService";
+import { handleMockTokenRefresh } from "@/app/services/mockAuthService";
 
 const OAUTH_ENDPOINT = process.env.OAUTH_ENDPOINT || "";
 const OAUTH_CLIENT_ID = process.env.OAUTH_CLIENT_ID || "";
@@ -11,20 +13,11 @@ export interface TokenResponse {
   expires_in: number;
 }
 
-// Function to check if we're in mock mode
-const isInMockMode = () => {
-  // Check if we're using the mock credentials
-  const token = getTokenFromSession();
-  return token === "FAKE_TOKEN";
-};
-
 export async function fetchToken(): Promise<TokenResponse> {
-  // If we're in mock mode, return a fake token
-  if (isInMockMode()) {
-    return {
-      access_token: "FAKE_TOKEN",
-      expires_in: 86400, // One day in seconds
-    };
+  // Check if in mock mode
+  const token = getTokenFromSession();
+  if (isInMockMode(token)) {
+    return handleMockTokenRefresh();
   }
 
   const url = OAUTH_ENDPOINT + "/token";
@@ -66,10 +59,14 @@ export async function fetchWithToken(
   options: RequestInit = {},
 ): Promise<Response> {
   // Merge custom headers with options headers
-
   const token = getTokenFromSession();
   if (token === "") {
     throw new Error("Token not found");
+  }
+
+  // Check if in mock mode for non-health endpoints
+  if (isInMockMode(token) && !url.toString().includes("/api/health")) {
+    return createMockResponse();
   }
 
   const headers = Object.assign({}, options.headers, {
@@ -80,28 +77,12 @@ export async function fetchWithToken(
   const requestOptions: RequestInit = Object.assign({}, options, { headers });
 
   try {
-    // If in mock mode and this is not a dev/test API, fake the response
-    if (isInMockMode() && !url.toString().includes("/api/health")) {
-      // Create a mock response
-      return new Response(JSON.stringify({}), {
-        status: 200,
-        headers: new Headers({
-          "Content-Type": "application/json",
-        }),
-      });
-    }
-
     const response: Response = await fetch(url, requestOptions);
     return response;
   } catch (error) {
-    // If in mock mode, return a successful empty response
-    if (isInMockMode()) {
-      return new Response(JSON.stringify({}), {
-        status: 200,
-        headers: new Headers({
-          "Content-Type": "application/json",
-        }),
-      });
+    // Use mock response in mock mode on error
+    if (isInMockMode(token)) {
+      return createMockResponse();
     }
     throw error;
   }

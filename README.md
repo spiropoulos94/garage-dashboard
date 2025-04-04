@@ -50,6 +50,18 @@ The application will automatically use mock data for all API requests when in mo
 - If no mock data is found but you're in mock mode, default empty responses will be returned
 - The system is fully functional without any backend connection
 
+### Mock Architecture
+
+The mock functionality is implemented as a separate layer of services, allowing the main application code to remain clean and focused on business logic:
+
+- **Mock Services** (`app/services/`)
+  - `mockService.ts` - Core utilities for mock functionality
+  - `mockApiInterceptor.ts` - Intercepts API requests and returns mock data
+  - `mockAuthService.ts` - Handles mock authentication
+  - `mockMiddlewareService.ts` - Manages request authentication in middleware
+
+This architecture allows the application to cleanly switch between real and mock data without cluttering the main application code.
+
 ### Creating custom mock data
 
 You can create your own mock data files for specific endpoints:

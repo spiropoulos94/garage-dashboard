@@ -1,6 +1,7 @@
 "use server";
 
-import { fetchToken, fetchWithToken, TokenResponse } from "@/app/actions/token";
+import { fetchToken, fetchWithToken } from "@/app/actions/token";
+import { handleMockSignIn, isMatchingMockCredentials } from "@/app/services/mockAuthService";
 import {
   getTokenFromSession,
   ONE_DAY,
@@ -13,18 +14,11 @@ import { redirect } from "next/navigation";
 const REPAREO_DASHBOARD_API = process.env.REPAREO_DASHBOARD_API || "";
 
 export const signIn = async (email: string, password: string) => {
-  if (email === "email" || password === "password") {
-    saveToClientCookies("client_token", "true", ONE_DAY);
-    saveToSession("token", "FAKE_TOKEN", ONE_DAY);
-
-    saveToSession("userId", "04525c34_c116_4ec0_a30b_d9de7c2b5541", ONE_DAY);
-    return {
-      status: 200,
-      data: {
-        userId: "12345",
-      },
-    };
+  // Check for mock credentials
+  if (isMatchingMockCredentials(email, password)) {
+    return handleMockSignIn(email, password);
   }
+
   try {
     if (!getTokenFromSession()) {
       console.log("no token in session, refreshing token");
@@ -78,7 +72,7 @@ export const logOut = async (deepLink?: string) => {
   }
 };
 
-export const refreshTokenOnSession = async (): Promise<TokenResponse> => {
+export const refreshTokenOnSession = async () => {
   // get token using oauth credentials
   const token = await fetchToken();
 
