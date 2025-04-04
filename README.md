@@ -1,37 +1,22 @@
+# Repareo Garage Dashboard
+
 Source Code of Garage Dashboard Repository
-
-## How to run the project in mock state
-
-Login with email ```email``` and password as ```password``` to see the project live.
-
-## App Router folder naming convention
-
-We are using the
-
-```bash
-(auth)
-```
-
-and
-
-```bash
-(dashboard)
-```
-
-routes inside the App Router. Routes in brackets are ignored by NextJS router. We follow this convention in order to semantically group the routes in two categories.
-
-- (auth) includes the routes that the user should be able to access when NOT authenticated (e.g /login, /register etc)
-- (dashboard) includes the main application routes that should be accessible upon authentiction
-
-#
-
-#
-
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
 
-First, run the development server:
+First, install the dependencies:
+
+```bash
+npm install
+# or
+yarn install
+# or
+pnpm install
+# or
+bun install
+```
+
+Then, run the development server:
 
 ```bash
 npm run dev
@@ -45,9 +30,62 @@ bun dev
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Using Mock Data
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+This application can run in a fully mocked mode to facilitate development and testing without requiring a backend connection.
+
+### How to run the project with mock data
+
+1. Start the development server as described above
+2. Navigate to the login page
+3. Use the following credentials:
+   - Email: `email`
+   - Password: `password`
+
+The application will automatically use mock data for all API requests when running in this mode.
+
+## App Structure
+
+We are using the App Router in Next.js with the following folder naming convention:
+
+```bash
+(auth)
+```
+
+and
+
+```bash
+(dashboard)
+```
+
+Routes in brackets are ignored by the NextJS router. We follow this convention to semantically group the routes in two categories:
+
+- **(auth)** includes the routes that the user should be able to access when NOT authenticated (e.g., /login, /register, etc.)
+- **(dashboard)** includes the main application routes that should be accessible upon authentication
+
+## Screenshots
+
+The application includes various views and components:
+
+- **List View**: A comprehensive view of all records
+  ![List View](./screenshots/list-view.png)
+
+- **List with Filters**: Filtered view of records
+  ![List with Filters](./screenshots/list-with-filters.png)
+
+- **List Actions**: Available actions for list items
+  ![List Actions](./screenshots/list-actions.png)
+
+- **Detail View**: Detailed information about a specific record
+  ![Detail View](./screenshots/detail-view.png)
+
+- **Modal Flow**:
+  - Step 1: ![Modal Flow Step 1](./screenshots/modal-flow-step-1.png)
+  - Step 2: ![Modal Flow Step 2](./screenshots/modal-flow-step-2.png)
+  - Step 3: ![Modal Flow Step 3](./screenshots/modal-flow-step-3.png)
+
+- **Cancelled State**:
+  ![Cancelled](./screenshots/cancelled.png)
 
 ## Learn More
 
@@ -55,8 +93,6 @@ To learn more about Next.js, take a look at the following resources:
 
 - [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
 - [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
 
 ## Deploy on Vercel
 
